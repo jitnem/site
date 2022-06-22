@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'VCR OSD Mono';
+    src: url("../fonts/VCR_OSD_MONO_1.001.ttf") format('truetype');
+    
+}
+
+#myBackground {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.scrollbar::-webkit-scrollbar {
+    width: 2px;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+#screen {
+    padding: 15px 10px;
+    border: 2px solid whitesmoke;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -moz-opacity: 0.65;
+    opacity: 0.65;
+    background-color: #000000;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    padding: 20px;
+}
+
+html {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body, div {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: -moz-none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+body {
+    font-family: 'VCR OSD Mono', serif !important;
+    color: whitesmoke;
+    font-style: italic;
+    background: black;
+}
+
+A:link {
+    color: whitesmoke; text-decoration: none;
+}
+A:visited {
+    color: whitesmoke; text-decoration: none;
+}
+A:hover {
+    text-shadow: 0pt 0pt 0.3em whitesmoke, 0pt 0pt 0.3em whitesmoke;
+    color: whitesmoke; text-decoration: none;
+}
+A:active {
+    color: whitesmoke; text-decoration: none;
+}
+
+.is-visible { opacity: 1;    }
+.is-hidden {  opacity: 0;    }
+.is-removed { display: none; }
+
+#message {
+  margin: 0 auto;
+  width: 80%;
+  padding: 10px;
+  background-color: #343434;
+  margin-top: 20px;
+  color: white;
+}

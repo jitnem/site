@@ -1,0 +1,47 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link rel="shortcut icon" href="img//favicon.jpg" />
+<link rel="icon" href="img/favicon.jpg" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="lucki">
+<meta property="og:description" content="/lucki">
+<meta property="og:url" content="https://w0ck.com">
+<meta property="og:image" content="wallpapers/icon.png">
+</head>
+<body>
+<audio id="background_song" onended="newSong(undefined, ',benice2me.mp3, frufru.mp3')" src="music/benice2me.mp3"></audio>
+<img id="myBackground" src="wallpapers/background.gif">
+<title>w0ck</title>
+<div id="screen">
+<div id="message" class="is-hidden is-removed"></div>
+<font size="5" id="name">Yeezus</font>
+<hr>
+<a href="discord.gg/lucki" target="_blank" class="social_link">Discord Server</a>
+<br>
+<br>
+<br>
+<br>
+<a id="discordid" onclick="window.open('https:\/\/discord.com\/users\/269935012093231115')">Lucki#0001</a>
+<a a>
+<hr>
+<div>
+<img src="img/reverse.png" id="reverse" style="cursor: pointer" onclick="newSong('reverse', 'benice2me.mp3,frufru.mp3')">
+<input class="connected" type="range" min="0" max="100" value="20" id="volume_slider" oninput="changeVolume(this.value)" onchange="changeVolume(this.value)">
+<img src="img/skip.png" id="skip" style="cursor: pointer" onclick="newSong('skip', 'benice2me.mp3,frufru.mp3')">
+<br>
+<img src="img/play.png" id="state" style="cursor: pointer" onclick="songHandler()">
+</div>
+</a>
+</div>
+
+<a a>
+<font size="3" id="song_title" class="content">Currently Playing: benice2me.mp3 </font>
+<script defer src="script/app2.js"></script>
+<script src="script/app.js"></script>
+</a>
+
+
+</body>
+</html>
